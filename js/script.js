@@ -21,3 +21,11 @@ if (navigator.serviceWorker) {
 function myButtonClicked() {
   document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
 }
+
+var day = "Friday"
+var age = 11
+if ((day == "tuesday" || day == "Thursday") ||(age > 12 && age < 21)) {
+  write("you're eligible for student pricing")
+} else {
+  write("you must pay full price.")
+}
