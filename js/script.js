@@ -15,13 +15,6 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
-}
-
 function calculate() {
   let inputedAge = document.getElementById("age").value
   let inputedDay = document.getElementById("day").value
