@@ -22,10 +22,15 @@ function myButtonClicked() {
   document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
 }
 
-var day = "Friday"
-var age = 11
-if (day == "tuesday" || day == "Thursday" || (age > 12 && age < 21)) {
-  write("you're eligible for student pricing")
-} else {
-  write("you must pay full price.")
+function calculate() {
+  let inputedAge = document.getElementById("age").value
+  let inputedDay = document.getElementById("day").value
+
+  if ((inputedDay == "Tuesday" || inputedDay == "Thursday") || (inputedAge > 12 && inputedAge < 21)) {
+    document.getElementById("answer").innerHTML =
+      "You're able to get the discount! :)"
+  } else {
+    document.getElementById("answer").innerHTML =
+      "Sorry, you must pay for regular pricing. :("
+  }
 }
